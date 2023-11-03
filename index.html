@@ -21,6 +21,9 @@
     <script>
         const contractAddress = '0xd9145CCE52D386f254917e481eB44e9943F39138'; // Замените на адрес вашего контракта
         const contractABI = [
+
+
+		[
 	{
 		"inputs": [
 			{
@@ -32,6 +35,11 @@
 				"internalType": "uint256",
 				"name": "_totalRewards",
 				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "_tokenAddress",
+				"type": "address"
 			}
 		],
 		"stateMutability": "nonpayable",
@@ -199,6 +207,19 @@
 	},
 	{
 		"inputs": [],
+		"name": "token",
+		"outputs": [
+			{
+				"internalType": "contract IERC20",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
 		"name": "totalRewards",
 		"outputs": [
 			{
@@ -236,7 +257,8 @@
 		"stateMutability": "nonpayable",
 		"type": "function"
 	}
-            
+]
+	
         ]; 
 
         const web3 = new Web3(window.ethereum);
