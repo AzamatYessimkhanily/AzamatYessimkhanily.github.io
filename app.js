@@ -1,6 +1,7 @@
 const contractAddress = '0xd9145CCE52D386f254917e481eB44e9943F39138'; // Замените на адрес вашего контракта
 const contractABI = [
-  [
+
+	[
 	{
 		"inputs": [
 			{
@@ -235,6 +236,7 @@ const contractABI = [
 		"type": "function"
 	}
 ]
+  
 ];
 
 const web3 = new Web3(window.ethereum);
